@@ -39,6 +39,8 @@
   },
   "devDependencies": {
     "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.7"
+    "tailwindcss": "^3.2.7",
+    "prettier": "2.8.4",
+    "sass": "^1.58.3"
   }
 }
