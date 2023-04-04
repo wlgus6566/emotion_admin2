@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b5217b0d-fd91-4c8c-9ab2-aa4244aecf54" name="Changes" comment="cls" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="10.develop_jh_form" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="10.develop" />
+                    <option name="lastUsedInstant" value="1679992479" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="10.develop_jh_form" />
+                    <option name="lastUsedInstant" value="1679991282" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1678170053" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2MfsYjq4eKaR8zOeBOy8LCJVaK5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Emotion-CT/WebstormProjects/emotion_admin_2/src/components/global&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Program Files\\nodejs\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Emotion-CT\WebstormProjects\emotion_admin_2\src\components\global" />
+      <recent name="C:\Users\Emotion-CT\WebstormProjects\emotion_admin_frontend\src\components\global" />
+      <recent name="C:\Users\Emotion-CT\WebstormProjects\emotion_admin_frontend\src\pages\works" />
+      <recent name="C:\Users\Emotion-CT\WebstormProjects\emotion_admin_frontend\src\auth" />
+      <recent name="C:\Users\Emotion-CT\WebstormProjects\emotion_admin_frontend\src\pages\magazine\dd" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Emotion-CT\WebstormProjects\emotion_admin_frontend" />
+      <recent name="C:\Users\Emotion-CT\WebstormProjects\emotion_admin_frontend\src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5217b0d-fd91-4c8c-9ab2-aa4244aecf54" name="Changes" comment="" />
+      <created>1678170020866</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678170020866</updated>
+      <workItem from="1678170022168" duration="76541000" />
+      <workItem from="1678357237677" duration="115000" />
+      <workItem from="1678666947933" duration="81862000" />
+      <workItem from="1678926882498" duration="23005000" />
+      <workItem from="1678959406778" duration="2000" />
+      <workItem from="1679272814935" duration="81168000" />
+      <workItem from="1679551119418" duration="7775000" />
+      <workItem from="1679877102990" duration="1465000" />
+      <workItem from="1679879720140" duration="5099000" />
+      <workItem from="1679903289094" duration="3300000" />
+      <workItem from="1679968366333" duration="13866000" />
+      <workItem from="1680569714930" duration="7080000" />
+      <workItem from="1680589148325" duration="4711000" />
+    </task>
+    <task id="LOCAL-00095" summary="logout mutate cache delete">
+      <created>1679386526879</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386526879</updated>
+    </task>
+    <task id="LOCAL-00096" summary="access token 갱신 구현 완료">
+      <created>1679387125897</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1679387125897</updated>
+    </task>
+    <task id="LOCAL-00097" summary="access token 갱신 구현 완료">
+      <created>1679387147303</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1679387147303</updated>
+    </task>
+    <task id="LOCAL-00098" summary="로그인 error 처리">
+      <created>1679387876632</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1679387876632</updated>
+    </task>
+    <task id="LOCAL-00099" summary="로그인 error 처리">
+      <created>1679389082516</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1679389082516</updated>
+    </task>
+    <task id="LOCAL-00100" summary="로그인 error 처리">
+      <created>1679445365783</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1679445365783</updated>
+    </task>
+    <task id="LOCAL-00101" summary="axios 훅 만들기">
+      <created>1679448851319</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1679448851319</updated>
+    </task>
+    <task id="LOCAL-00102" summary="axios 훅 만들기">
+      <created>1679449767979</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1679449767979</updated>
+    </task>
+    <task id="LOCAL-00103" summary="axios 훅 만들기">
+      <created>1679449829695</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1679449829695</updated>
+    </task>
+    <task id="LOCAL-00104" summary="axios 훅 만들기">
+      <created>1679450177648</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1679450177648</updated>
+    </task>
+    <task id="LOCAL-00105" summary="axios 훅 만들기">
+      <created>1679450961922</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1679450961922</updated>
+    </task>
+    <task id="LOCAL-00106" summary="axios 훅 만들기">
+      <created>1679451345688</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1679451345688</updated>
+    </task>
+    <task id="LOCAL-00107" summary="axios 훅 만들기">
+      <created>1679452064644</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1679452064644</updated>
+    </task>
+    <task id="LOCAL-00108" summary="axios 훅 만들기">
+      <created>1679452936689</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1679452936689</updated>
+    </task>
+    <task id="LOCAL-00109" summary="axios 훅 만들기">
+      <created>1679453207159</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1679453207159</updated>
+    </task>
+    <task id="LOCAL-00110" summary="axios 훅 만들기">
+      <created>1679453940646</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1679453940646</updated>
+    </task>
+    <task id="LOCAL-00111" summary="axios 훅 만들기">
+      <created>1679454727421</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1679454727421</updated>
+    </task>
+    <task id="LOCAL-00112" summary="axios 훅 만들기">
+      <created>1679455274547</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1679455274547</updated>
+    </task>
+    <task id="LOCAL-00113" summary="axios 훅 만들기">
+      <created>1679455452040</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1679455452040</updated>
+    </task>
+    <task id="LOCAL-00114" summary="axios 훅 만들기">
+      <created>1679462067383</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1679462067383</updated>
+    </task>
+    <task id="LOCAL-00115" summary="axios 훅 만들기">
+      <created>1679463049407</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1679463049407</updated>
+    </task>
+    <task id="LOCAL-00116" summary="axios 훅 만들기">
+      <created>1679464249589</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1679464249589</updated>
+    </task>
+    <task id="LOCAL-00117" summary="axios 훅 만들기">
+      <created>1679464818272</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1679464818272</updated>
+    </task>
+    <task id="LOCAL-00118" summary="axios 훅 만들기">
+      <created>1679465158680</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1679465158680</updated>
+    </task>
+    <task id="LOCAL-00119" summary="axios 훅 만들기">
+      <created>1679465506233</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1679465506233</updated>
+    </task>
+    <task id="LOCAL-00120" summary="axios 훅 만들기">
+      <created>1679466097376</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1679466097376</updated>
+    </task>
+    <task id="LOCAL-00121" summary="axios 훅 만들기">
+      <created>1679466226060</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1679466226060</updated>
+    </task>
+    <task id="LOCAL-00122" summary="axios 훅 만들기">
+      <created>1679466653049</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1679466653049</updated>
+    </task>
+    <task id="LOCAL-00123" summary="axios 훅 만들기 완료">
+      <created>1679468601919</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1679468601919</updated>
+    </task>
+    <task id="LOCAL-00124" summary="axios 훅 만들기 완료">
+      <created>1679468757988</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1679468757988</updated>
+    </task>
+    <task id="LOCAL-00125" summary="로그아웃 수정">
+      <created>1679472797898</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1679472797898</updated>
+    </task>
+    <task id="LOCAL-00126" summary="로그아웃 수정">
+      <created>1679472902115</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1679472902115</updated>
+    </task>
+    <task id="LOCAL-00127" summary="로그아웃 수정">
+      <created>1679473517132</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1679473517132</updated>
+    </task>
+    <task id="LOCAL-00128" summary="img 태그 변경 로직 정리">
+      <created>1679475017036</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1679475017036</updated>
+    </task>
+    <task id="LOCAL-00129" summary="img 태그 변경 로직 정리">
+      <created>1679532339790</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1679532339790</updated>
+    </task>
+    <task id="LOCAL-00130" summary="img 태그 변경 로직 정리">
+      <created>1679535905467</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1679535905467</updated>
+    </task>
+    <task id="LOCAL-00131" summary="img 태그 변경 로직 정리">
+      <created>1679536231382</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1679536231382</updated>
+    </task>
+    <task id="LOCAL-00132" summary="form file">
+      <created>1679562581977</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1679562581977</updated>
+    </task>
+    <task id="LOCAL-00133" summary="form file">
+      <created>1679877817903</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1679877817903</updated>
+    </task>
+    <task id="LOCAL-00134" summary="data fetching code">
+      <created>1679882075034</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1679882075034</updated>
+    </task>
+    <task id="LOCAL-00135" summary="data fetching code">
+      <created>1679906684494</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1679906684494</updated>
+    </task>
+    <task id="LOCAL-00136" summary="cls">
+      <created>1679907711525</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1679907711525</updated>
+    </task>
+    <task id="LOCAL-00137" summary="cls">
+      <created>1679907935051</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1679907935051</updated>
+    </task>
+    <task id="LOCAL-00138" summary="cls">
+      <created>1679983294715</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1679983294715</updated>
+    </task>
+    <task id="LOCAL-00139" summary="cls">
+      <created>1679984002036</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1679984002036</updated>
+    </task>
+    <task id="LOCAL-00140" summary="cls">
+      <created>1679984090920</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1679984090920</updated>
+    </task>
+    <task id="LOCAL-00141" summary="cls">
+      <created>1680163887947</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1680163887947</updated>
+    </task>
+    <task id="LOCAL-00142" summary="cls">
+      <created>1680163926539</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1680163926539</updated>
+    </task>
+    <task id="LOCAL-00143" summary="cls">
+      <created>1680595654267</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1680595654267</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pagination" />
+    <MESSAGE value="magazine 업로드 성공[홑따옴표 바꾸기]" />
+    <MESSAGE value="magazine 수정" />
+    <MESSAGE value="works creditlsit수정" />
+    <MESSAGE value="works fileupload 완료" />
+    <MESSAGE value="매거진 정렬 순서 수정" />
+    <MESSAGE value="works 정렬 순서 수정" />
+    <MESSAGE value="loading 추가" />
+    <MESSAGE value="build 에러 해결" />
+    <MESSAGE value="env-cmd 설정" />
+    <MESSAGE value="login token 수정" />
+    <MESSAGE value="login autofocus" />
+    <MESSAGE value="magazine 업로드 수정" />
+    <MESSAGE value="swr error" />
+    <MESSAGE value="accessToken" />
+    <MESSAGE value="logout mutate cache delete" />
+    <MESSAGE value="access token 갱신 구현 완료" />
+    <MESSAGE value="로그인 error 처리" />
+    <MESSAGE value="axios 훅 만들기" />
+    <MESSAGE value="axios 훅 만들기 완료" />
+    <MESSAGE value="로그아웃 수정" />
+    <MESSAGE value="img 태그 변경 로직 정리" />
+    <MESSAGE value="form file" />
+    <MESSAGE value="data fetching code" />
+    <MESSAGE value="cls" />
+    <option name="LAST_COMMIT_MESSAGE" value="cls" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/app-sidebar.jsx</url>
+          <line>24</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'font.css';
+
+html {
+    line-height: 1.5;
+}
+.font-family-karla { font-family: karla; }
+body {
+    min-width: 1280px;
+    @apply bg-gray-100 font-family-karla
+}
