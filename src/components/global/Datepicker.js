@@ -3,6 +3,7 @@ import DatePicker from 'react-datepicker'
 import {useController} from 'react-hook-form'
 import PropTypes from 'prop-types'
 import ko from 'date-fns/locale/ko'
+import 'react-datepicker/dist/react-datepicker.css'
 
 const Datepicker = ({
                         control = null,

@@ -2,10 +2,6 @@ import Router from "next/router"
 import {useApiPost} from "@/hook/useAxios"
 import DefaultsLayout from "@/layouts/defaults"
 import PageTitle from "@/components/global/page-title"
-import FormInput from "@/components/global/form-input"
-import FormTextarea from "@/components/global/form-textarea"
-import FormDatepicker from "@/components/global/form-datepicker"
-import FormFile from "@/components/global/form-file"
 import Button from "@/components/global/button"
 import {useEffect, useState} from 'react'
 import {useForm, Controller} from 'react-hook-form'
@@ -77,44 +73,42 @@ export default function MagazineWrite() {
     })
 
     // 작성일시 입력값을 서버가 요구하는 형식으로 변환하는 함수
-    const handleDateFormat = () => {
-        /*    let val = formData["writeDt"]
-                                        console.log(val)
-                                        const year = val.getFullYear().toString()
-                                        const month = (val.getMonth() + 1).toString().padStart(2, "0")
-                                        const day = (val.getDay() + 1).toString().padStart(2, "0")
-                                        formData["writeDt"] = `${year}-${month}-${day}`*/
-        formData["writeDt"] = "2022-03-02"
+    const handleDateFormat = (date) => {
+        console.log(date)
+        const year = date.getFullYear().toString().slice(-2); // 2자리 연도
+        const month = ('0' + (date.getMonth() + 1)).slice(-2); // 2자리 월
+        const day = ('0' + date.getDate()).slice(-2); // 2자리 일
+        const returnDate = `${year}-${month}-${day}`
+        return returnDate
     }
 
     // 본문 내 이미지 경로를 업로드된 파일 경로로 수정하는 함수
-    const handleContentsImgSrcChange = (arr) => {
+    const handleContentsImgSrcChange = (arr, data) => {
         /*
                                                     <img :src="require('@/assets/images/mag/img1 - 복사본.jpg')" alt="방 어피니티 다이어그램" />
                                                     <div>방 어피니티 다이어그</div>
                                                    <br><br>  <img :src="require('@/assets/images/mag/img0.jpg')" alt="다이어그램" />
                                                  */
-        let contents = formData["contents"] || ""
+        let contents2 = data.contents || ''
+        console.log(arr, contents2)
         arr.forEach((ar) => {
             const {filePath, fileName} = ar
             const pattern = new RegExp(`<img.*?${fileName}.*?\\/>`)
-            const match = contents.match(pattern)[0]
+            const match = contents2.match(pattern)[0]
             const modifiedTag = match.replace(/:src=".*?"/, `src="${filePath}"`)
-            contents = contents.replace(match, modifiedTag)
+            contents2 = contents2.replace(match, modifiedTag)
         })
-        formData.contents = contents
-        console.log("formData", formData)
+        return contents2
     }
 
     // 파일 업로드 처리 함수
-    const filesUpload = async (name) => {
+    const filesUpload = async (data, name) => {
         try {
-            const fileArr = formData[name]
+            const fileArr = data[name]
             const form = new FormData()
             fileArr.forEach((el) => {
                 form.append("files", el)
             })
-            console.log("form", form)
             const response = await useApiPost(
                 `${process.env.BASE_URL}/api/file/uploads`,
                 form
@@ -128,10 +122,10 @@ export default function MagazineWrite() {
                         fileExtensionName: el.fileExtensionName,
                     }
                 })
+                data[name] = arr
                 if (name == "contentsImageFileList") {
-                    handleContentsImgSrcChange(arr)
+                    data.contents = handleContentsImgSrcChange(arr, data)
                 }
-                formData[name] = arr
             } else {
                 throw response
             }
@@ -142,9 +136,9 @@ export default function MagazineWrite() {
     }
 
     // 전체 폼 제출 처리 함수
-    const handleSubmit2 = async (event) => {
+    const handleSubmit2 = async (data) => {
+        console.log(data)
         try {
-            event.preventDefault()
             await Promise.all(
                 [
                     "contentsImageFileList",
@@ -155,20 +149,21 @@ export default function MagazineWrite() {
                     "pcWriterImageFileList",
                     "moWriterImageFileList",
                 ].map(async (name) => {
-                    await filesUpload(name)
+                    await filesUpload(data, name)
                 })
             )
-            handleDateFormat()
+            const date = new Date(data.writeDt);
+            data.writeDt = handleDateFormat(date);
             await formSubmit()
         } catch (error) {
             console.error(error)
         }
     }
-    const formSubmit = async () => {
+    const formSubmit = async (data) => {
         try {
             const res = await useApiPost(
                 `${process.env.BASE_URL}/api/magazine`,
-                formData
+                data
             )
             if (res.data.code === "SUC001") {
                 console.log(res)
@@ -215,13 +210,7 @@ export default function MagazineWrite() {
                             className="w-full"
                             placeholder="PC 제목을 입력해주세요."
                         />
-                        {/*      <FormInput
-              value={formData.pcTitle}
-              onChange={(val) => handleFormChange(val, "pcTitle")}
-              name="pcTitle"
-              placeholder="PC 제목을 입력하세요."
-              label="PC 제목"
-            />*/}
+
                     </div>
                     <div className="mb-6">
                         <Input
@@ -232,13 +221,7 @@ export default function MagazineWrite() {
                             className="w-full"
                             placeholder="MO 제목을 입력해주세요."
                         />
-                        {/*  <FormInput
-              value={formData.moTitle}
-              onChange={(val) => handleFormChange(val, "moTitle")}
-              name="moTitle"
-              placeholder="MO 제목을 입력하세요."
-              label="MO 제목"
-            />*/}
+
                     </div>
                     <div className="mb-6">
                         <Textarea
@@ -248,13 +231,7 @@ export default function MagazineWrite() {
                             placeholder="설명을 입력하세요."
                             resize={true}
                         />
-                        {/*    <FormTextarea
-              value={formData.description}
-              onChange={(val) => handleFormChange(val, "description")}
-              name="description"
-              placeholder="설명을 입력하세요."
-              label="설명"
-            />*/}
+
                     </div>
 
                     <div className="my-20">
@@ -269,33 +246,18 @@ export default function MagazineWrite() {
                                     control={control}
                                     maxLength={20}
                                 />
-                                {/*    <FormFile
-                  value={formData.contentsImageFileList}
-                  onChange={(val) =>
-                    handleFormChange(val, "contentsImageFileList")
-                  }
-                  max="10"
-                  multiple={true}
-                  label="본문 첨가이미지"
-                />*/}
+
                             </div>
                             <div className="mb-6">
                                 <Textarea
                                     name="contents"
                                     label="본문"
-                                    rows="20"
+                                    rows={20}
                                     control={control}
                                     placeholder="본문을 입력하세요."
                                     resize={true}
                                 />
-                                {/*       <FormTextarea
-                                    value={formData.contents}
-                                    onChange={(val) => handleFormChange(val, "contents")}
-                                    name="contents"
-                                    placeholder="본문을 입력하세요."
-                                    rows="20"
-                                    label="본문"
-                                />*/}
+
                             </div>
                         </div>
                     </div>
@@ -308,27 +270,16 @@ export default function MagazineWrite() {
                             control={control}
                             placeholder="작성자 부서명을 입력해주세요."
                         />
-                        {/*        <FormInput
-                            value={formData.writerDepartment}
-                            onChange={(val) => handleFormChange(val, "writerDepartment")}
-                            name="writerDepartment"
-                            placeholder="작성자 부서명"
-                            label="작성자 부서명"
-                        />*/}
+
                         <Datepicker
                             name="writeDt"
                             label="작성일자"
                             control={control}
                             required={true}
                             range={false}
+                            placeholder="날짜 선택"
                         />
-                        {/*      <FormDatepicker
-                            value={formData.writeDt}
-                            onChange={(val) => handleFormChange(val, "writeDt")}
-                            name="writeDt"
-                            label="작성일자"
-                            placeholderText="작성일자 선택"
-                        />*/}
+
                     </div>
                     <div className="grid gap-6 mb-6 md:grid-cols-2">
                         <Input
