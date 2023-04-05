@@ -74,7 +74,6 @@ export default function MagazineWrite() {
 
     // 작성일시 입력값을 서버가 요구하는 형식으로 변환하는 함수
     const handleDateFormat = (date) => {
-        console.log(date)
         const year = date.getFullYear().toString().slice(-2); // 2자리 연도
         const month = ('0' + (date.getMonth() + 1)).slice(-2); // 2자리 월
         const day = ('0' + date.getDate()).slice(-2); // 2자리 일
@@ -90,7 +89,6 @@ export default function MagazineWrite() {
                                                    <br><br>  <img :src="require('@/assets/images/mag/img0.jpg')" alt="다이어그램" />
                                                  */
         let contents2 = data.contents || ''
-        console.log(arr, contents2)
         arr.forEach((ar) => {
             const {filePath, fileName} = ar
             const pattern = new RegExp(`<img.*?${fileName}.*?\\/>`)
@@ -136,7 +134,7 @@ export default function MagazineWrite() {
     }
 
     // 전체 폼 제출 처리 함수
-    const handleSubmit2 = async (data) => {
+    const handleSubmitForm = async (data) => {
         console.log(data)
         try {
             await Promise.all(
@@ -200,7 +198,7 @@ export default function MagazineWrite() {
         <div>
             <PageTitle title="Magazine 관리"/>
             <div className="relative overflow-x-auto shadow-md sm:rounded-lg p-10 bg-white">
-                <form onSubmit={handleSubmit(handleSubmit2)}>
+                <form onSubmit={handleSubmit(handleSubmitForm)}>
                     <div className="mb-6">
                         <Input
                             name="pcTitle"
