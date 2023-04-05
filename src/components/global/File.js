@@ -304,7 +304,7 @@ const File = ({
                     <label
                         htmlFor={name}
                         ref={dragRef}
-                        className={`btn btn-outline btn-${size} text-xs gap-2 bg-white hover:text-neutral hover:border-neutral hover:bg-base-100 ${
+                        className={`btn btn-${size} text-xs flex align-center border border-gray-800 text-white py-3 px-5 mt-2 cursor-pointer rounded-3xl gap-2 bg-gray-900 hover:text-neutral hover:border-neutral hover:bg-base-100 ${
                             disabled || maxLength <= value.length ? 'btn-disabled' : ''
                         } ${focus ? 'file-focus' : ''}`}
                     >
@@ -312,7 +312,7 @@ const File = ({
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 20 20"
                             fill="currentColor"
-                            className="w-4 h-4"
+                            className="w-4 h-4 text-white"
                         >
                             <path
                                 d="M9.25 13.25a.75.75 0 001.5 0V4.636l2.955 3.129a.75.75 0 001.09-1.03l-4.25-4.5a.75.75 0 00-1.09 0l-4.25 4.5a.75.75 0 101.09 1.03L9.25 4.636v8.614z"/>
@@ -351,10 +351,10 @@ const File = ({
 
             {/* file-name list */}
             {value.length !== 0 && type !== 'preview' ? (
-                <ul className="file-list w-full">
+                <ul className="file-list w-full flex flex-wrap">
                     {value.map((file, idx) => {
                         return (
-                            <li key={`${file.size}${file.name}${file.lastModified}`}>
+                            <li key={`${file.size}${file.name}${file.lastModified}`} className="w-1/4">
                 <span className="file-name">
                   <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -370,7 +370,8 @@ const File = ({
                         d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13"
                     />
                   </svg>
-                  <span>{file.name}</span>
+                  <span
+                      className="inline-block w-100 whitespace-nowrap overflow-hidden overflow-ellipsis">{file.name}</span>
                 </span>
 
                                 <button
@@ -401,9 +402,9 @@ const File = ({
                 <></>
             )}
 
-            {description && (
-                <span className="pl-1 label-text-alt">{description}</span>
-            )}
+            {/*{description && (*/}
+            {/*    <span className="pl-1 label-text-alt">{description}</span>*/}
+            {/*)}*/}
 
             <style lang="scss" jsx>{`
               input::file-selector-button {
@@ -423,7 +424,6 @@ const File = ({
 
               .file-list li {
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
                 height: 2rem;
                 gap: 0.5rem;
@@ -449,8 +449,6 @@ const File = ({
                 display: flex;
                 align-items: center;
                 gap: 0.4rem;
-                flex: 1 1 auto;
-                width: 0;
               }
 
               .file-list li .file-name > svg {

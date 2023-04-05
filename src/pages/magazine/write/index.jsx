@@ -285,14 +285,22 @@ export default function MagazineWrite() {
                 />*/}
                             </div>
                             <div className="mb-6">
-                                <FormTextarea
+                                <Textarea
+                                    name="contents"
+                                    label="본문"
+                                    rows="20"
+                                    control={control}
+                                    placeholder="본문을 입력하세요."
+                                    resize={true}
+                                />
+                                {/*       <FormTextarea
                                     value={formData.contents}
                                     onChange={(val) => handleFormChange(val, "contents")}
                                     name="contents"
                                     placeholder="본문을 입력하세요."
                                     rows="20"
                                     label="본문"
-                                />
+                                />*/}
                             </div>
                         </div>
                     </div>
