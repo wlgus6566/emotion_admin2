@@ -268,12 +268,6 @@ export default function MagazineWrite() {
                                     multiple={true}
                                     control={control}
                                     maxLength={20}
-                                    description={
-                                        <>
-                                            <span className="text-primary">000*000</span>, 최대 10개까지
-                                            등록 가능 jpg, png, 최대 1MB
-                                        </>
-                                    }
                                 />
                                 {/*    <FormFile
                   value={formData.contentsImageFileList}
@@ -325,6 +319,7 @@ export default function MagazineWrite() {
                             name="writeDt"
                             label="작성일자"
                             control={control}
+                            required={true}
                             range={false}
                         />
                         {/*      <FormDatepicker
@@ -336,7 +331,21 @@ export default function MagazineWrite() {
                         />*/}
                     </div>
                     <div className="grid gap-6 mb-6 md:grid-cols-2">
-                        <FormInput
+                        <Input
+                            name="writerJobRank"
+                            label="작성자 직책"
+                            required={true}
+                            control={control}
+                            placeholder="작성자 직책을 입력해주세요."
+                        />
+                        <Input
+                            name="writerName"
+                            label="작성자명"
+                            required={true}
+                            control={control}
+                            placeholder="작성자명을 입력해주세요."
+                        />
+                        {/*       <FormInput
                             value={formData.writerJobRank}
                             onChange={(val) => handleFormChange(val, "writerJobRank")}
                             name="writerJobRank"
@@ -349,55 +358,63 @@ export default function MagazineWrite() {
                             name="writerName"
                             placeholder="작성자명"
                             label="작성자명"
-                        />
+                        />*/}
                     </div>
                     <hr className="my-10"/>
 
                     {/* 이미지 업로드 */}
-                    <div className="mb-6">
-                        <FormFile
-                            value={formData.pcKeyImageFileList}
-                            onChange={(val) => handleFormChange(val, "pcKeyImageFileList")}
+                    <div className="grid gap-6 mb-6 md:grid-cols-2">
+                        <File
+                            name="pcKeyImageFileList"
                             label="PC 목록 썸네일 이미지"
+                            required={true}
+                            multiple={true}
+                            control={control}
+                            maxLength={1}
                         />
-                    </div>
-                    <div className="mb-6">
-                        <FormFile
-                            value={formData.moKeyImageFileList}
-                            onChange={(val) => handleFormChange(val, "moKeyImageFileList")}
+                        <File
+                            name="moKeyImageFileList"
                             label="MO 목록 썸네일 이미지"
+                            required={true}
+                            multiple={true}
+                            control={control}
+                            maxLength={1}
                         />
                     </div>
-                    <div className="mb-6">
-                        <FormFile
-                            value={formData.pcDetailKeyImageFileList}
-                            onChange={(val) =>
-                                handleFormChange(val, "pcDetailKeyImageFileList")
-                            }
+                    <div className="grid gap-6 mb-6 md:grid-cols-2">
+                        <File
+                            name="pcDetailKeyImageFileList"
                             label="PC 본문 이미지"
+                            required={true}
+                            multiple={true}
+                            control={control}
+                            maxLength={1}
                         />
-                    </div>
-                    <div className="mb-6">
-                        <FormFile
-                            value={formData.moDetailKeyImageFileList}
-                            onChange={(val) =>
-                                handleFormChange(val, "moDetailKeyImageFileList")
-                            }
+                        <File
+                            name="moDetailKeyImageFileList"
                             label="MO 본문 이미지"
+                            required={true}
+                            multiple={true}
+                            control={control}
+                            maxLength={1}
                         />
                     </div>
-                    <div className="mb-6">
-                        <FormFile
-                            value={formData.pcWriterImageFileList}
-                            onChange={(val) => handleFormChange(val, "pcWriterImageFileList")}
+                    <div className="grid gap-6 mb-6 md:grid-cols-2">
+                        <File
+                            name="pcWriterImageFileList"
                             label="PC 작성자 이미지"
+                            required={true}
+                            multiple={true}
+                            control={control}
+                            maxLength={1}
                         />
-                    </div>
-                    <div className="mb-6">
-                        <FormFile
-                            value={formData.moWriterImageFileList}
-                            onChange={(val) => handleFormChange(val, "moWriterImageFileList")}
+                        <File
+                            name="moWriterImageFileList"
                             label="MO 작성자 이미지"
+                            required={true}
+                            multiple={true}
+                            control={control}
+                            maxLength={1}
                         />
                     </div>
                     <div className="flex justify-end mt-6 space-x-2">

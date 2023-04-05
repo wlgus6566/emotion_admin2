@@ -177,7 +177,7 @@ const File = ({
       {/* label */}
             {label && (
                 <label
-                    className={`label text-${size} tooltip-right tooltip-error tooltip ${
+                    className={`label text-${size} block tooltip-right tooltip-error tooltip ${
                         error ? 'tooltip-open text-error' : ''
                     }`}
                     data-tip={error?.message}
@@ -187,10 +187,11 @@ const File = ({
                     {required && <span className="text-error inline-block ml-1">*</span>}
                 </label>
             )}
-            <span className={`relative w-full flex flex-wrap gap-3 max-md:gap-2`}>
+            <span
+                className={`${maxLength === 1 ? 'inline-block w-auto ' : 'flex w-full'} relative flex-wrap gap-3 max-md:gap-2 `}>
         {/* preview list */}
                 {type === 'preview' && (
-                    <ul className="file-preview-list">
+                    <ul className={`file-preview-list`}>
                         {value.length !== 0 && (
                             <>
                                 {previewUrls.map((previewUrl, idx) => {
@@ -351,7 +352,7 @@ const File = ({
 
             {/* file-name list */}
             {value.length !== 0 && type !== 'preview' ? (
-                <ul className="file-list w-full flex flex-wrap">
+                <ul className={`${maxLength === 1 ? 'inline-block w-50 ' : 'w-full flex'} file-list flex-wrap`}>
                     {value.map((file, idx) => {
                         return (
                             <li key={`${file.size}${file.name}${file.lastModified}`} className="w-1/4">

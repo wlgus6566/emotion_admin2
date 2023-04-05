@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5217b0d-fd91-4c8c-9ab2-aa4244aecf54" name="Changes" comment="login">
-      <change afterPath="$PROJECT_DIR$/src/components/global/Datepicker.js" afterDir="false" />
+    <list default="true" id="b5217b0d-fd91-4c8c-9ab2-aa4244aecf54" name="Changes" comment="datepicker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/global/File.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/global/File.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/magazine/write/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/magazine/write/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,14 +106,7 @@
       <workItem from="1679968366333" duration="13866000" />
       <workItem from="1680569714930" duration="7080000" />
       <workItem from="1680589148325" duration="4711000" />
-      <workItem from="1680596019782" duration="4562000" />
-    </task>
-    <task id="LOCAL-00098" summary="로그인 error 처리">
-      <created>1679387876632</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1679387876632</updated>
+      <workItem from="1680596019782" duration="6863000" />
     </task>
     <task id="LOCAL-00099" summary="로그인 error 처리">
       <created>1679389082516</created>
@@ -451,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680655401489</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="datepicker">
+      <created>1680655884604</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1680655884604</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +480,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="magazine 업로드 성공[홑따옴표 바꾸기]" />
     <MESSAGE value="magazine 수정" />
     <MESSAGE value="works creditlsit수정" />
     <MESSAGE value="works fileupload 완료" />
@@ -505,7 +504,8 @@
     <MESSAGE value="data fetching code" />
     <MESSAGE value="cls" />
     <MESSAGE value="login" />
-    <option name="LAST_COMMIT_MESSAGE" value="login" />
+    <MESSAGE value="datepicker" />
+    <option name="LAST_COMMIT_MESSAGE" value="datepicker" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
