@@ -14,6 +14,7 @@ import * as yup from 'yup'
 import Textarea from "@/components/global/Textarea";
 import Input from "@/components/global/Input";
 import File from "@/components/global/File";
+import Datepicker from "@/components/global/Datepicker";
 
 export default function MagazineWrite() {
     const schema = yup.object().shape({
@@ -306,20 +307,33 @@ export default function MagazineWrite() {
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-2">
-                        <FormInput
+                        <Input
+                            name="writerDepartment"
+                            label="작성자 부서명"
+                            required={true}
+                            control={control}
+                            placeholder="작성자 부서명을 입력해주세요."
+                        />
+                        {/*        <FormInput
                             value={formData.writerDepartment}
                             onChange={(val) => handleFormChange(val, "writerDepartment")}
                             name="writerDepartment"
                             placeholder="작성자 부서명"
                             label="작성자 부서명"
+                        />*/}
+                        <Datepicker
+                            name="writeDt"
+                            label="작성일자"
+                            control={control}
+                            range={false}
                         />
-                        <FormDatepicker
+                        {/*      <FormDatepicker
                             value={formData.writeDt}
                             onChange={(val) => handleFormChange(val, "writeDt")}
                             name="writeDt"
                             label="작성일자"
                             placeholderText="작성일자 선택"
-                        />
+                        />*/}
                     </div>
                     <div className="grid gap-6 mb-6 md:grid-cols-2">
                         <FormInput

@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5217b0d-fd91-4c8c-9ab2-aa4244aecf54" name="Changes" comment="login">
-      <change afterPath="$PROJECT_DIR$/src/components/global/File.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/global/Textarea.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/global/Datepicker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/magazine/write/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/magazine/write/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,21 +106,7 @@
       <workItem from="1679968366333" duration="13866000" />
       <workItem from="1680569714930" duration="7080000" />
       <workItem from="1680589148325" duration="4711000" />
-      <workItem from="1680596019782" duration="2223000" />
-    </task>
-    <task id="LOCAL-00096" summary="access token 갱신 구현 완료">
-      <created>1679387125897</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1679387125897</updated>
-    </task>
-    <task id="LOCAL-00097" summary="access token 갱신 구현 완료">
-      <created>1679387147303</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1679387147303</updated>
+      <workItem from="1680596019782" duration="4562000" />
     </task>
     <task id="LOCAL-00098" summary="로그인 error 처리">
       <created>1679387876632</created>
@@ -455,7 +437,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680596585222</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="login">
+      <created>1680598401596</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1680598401596</updated>
+    </task>
+    <task id="LOCAL-00146" summary="login">
+      <created>1680655401489</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1680655401489</updated>
+    </task>
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
