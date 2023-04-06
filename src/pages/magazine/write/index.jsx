@@ -3,7 +3,6 @@ import {useApiPost} from "@/hook/useAxios"
 import DefaultsLayout from "@/layouts/defaults"
 import PageTitle from "@/components/global/page-title"
 import Button from "@/components/global/button"
-import {useEffect, useState} from 'react'
 import {useForm, Controller} from 'react-hook-form'
 import {yupResolver} from '@hookform/resolvers/yup'
 import * as yup from 'yup'
@@ -55,28 +54,10 @@ export default function MagazineWrite() {
         }
     })
 
-    const [formData, setFormData] = useState({
-        pcTitle: "",
-        moTitle: "",
-        description: "",
-        contents: "",
-        writerDepartment: "",
-        writeDt: "",
-        writerJobRank: "",
-        contentsImageFileList: [],
-        pcKeyImageFileList: [],
-        moKeyImageFileList: [],
-        pcDetailKeyImageFileList: [],
-        moDetailKeyImageFileList: [],
-        pcWriterImageFileList: [],
-        moWriterImageFileList: [],
-    })
-
-    // 작성일시 입력값을 서버가 요구하는 형식으로 변환하는 함수
     const handleDateFormat = (date) => {
-        const year = date.getFullYear().toString().slice(-2); // 2자리 연도
-        const month = ('0' + (date.getMonth() + 1)).slice(-2); // 2자리 월
-        const day = ('0' + date.getDate()).slice(-2); // 2자리 일
+        const year = date.getFullYear().toString().slice(-2);
+        const month = ('0' + (date.getMonth() + 1)).slice(-2);
+        const day = ('0' + date.getDate()).slice(-2);
         const returnDate = `${year}-${month}-${day}`
         return returnDate
     }
@@ -99,7 +80,6 @@ export default function MagazineWrite() {
         return contents2
     }
 
-    // 파일 업로드 처리 함수
     const filesUpload = async (data, name) => {
         try {
             const fileArr = data[name]
@@ -133,7 +113,6 @@ export default function MagazineWrite() {
         }
     }
 
-    // 전체 폼 제출 처리 함수
     const handleSubmitForm = async (data) => {
         console.log(data)
         try {
@@ -171,9 +150,6 @@ export default function MagazineWrite() {
         } catch (e) {
             console.log(e)
         }
-    }
-    const handleFormChange = async (val, name) => {
-        setFormData({...formData, [name]: val})
     }
     const resetForm = () => {
         setFormData({

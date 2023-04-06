@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5217b0d-fd91-4c8c-9ab2-aa4244aecf54" name="Changes" comment="datepicker">
+    <list default="true" id="b5217b0d-fd91-4c8c-9ab2-aa4244aecf54" name="Changes" comment="magazine form 등록 완료">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/magazine/[id].jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/magazine/[id].jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/magazine/write/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/magazine/write/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,14 +107,7 @@
       <workItem from="1680569714930" duration="7080000" />
       <workItem from="1680589148325" duration="4711000" />
       <workItem from="1680596019782" duration="10322000" />
-      <workItem from="1680672961489" duration="4470000" />
-    </task>
-    <task id="LOCAL-00101" summary="axios 훅 만들기">
-      <created>1679448851319</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1679448851319</updated>
+      <workItem from="1680672961489" duration="12887000" />
     </task>
     <task id="LOCAL-00102" summary="axios 훅 만들기">
       <created>1679449767979</created>
@@ -451,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680677518299</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="magazine form 등록 완료">
+      <created>1680677627391</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1680677627392</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +481,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="magazine 수정" />
     <MESSAGE value="works creditlsit수정" />
     <MESSAGE value="works fileupload 완료" />
     <MESSAGE value="매거진 정렬 순서 수정" />
@@ -505,7 +505,8 @@
     <MESSAGE value="cls" />
     <MESSAGE value="login" />
     <MESSAGE value="datepicker" />
-    <option name="LAST_COMMIT_MESSAGE" value="datepicker" />
+    <MESSAGE value="magazine form 등록 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="magazine form 등록 완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
